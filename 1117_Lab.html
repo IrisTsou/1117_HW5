@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        table {
+            
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            
+        }
+
+        img {
+            height: 200px; /* Adjust the height as needed */
+            width: auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<table>
+
+<body>
+    <tr>
+        <td colspan="3" align = "center">
+            <strong>About -- 112306032</strong>
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            <img src="1000002097.JPEG" alt="Personal Photo" width="1109" height="1476">
+            <br>
+            <b>Personal Photo</b>
+        </td>
+        <td colspan="2">
+            Name: <input type="text">
+            <br>
+                Gender:
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+        </td>
+    </tr>
+    <tr>
+        <td>
+            County:
+            <select>
+                <option value="Taipei">Taipei</option>
+                <option value="Tainan">Tainan</option>
+                <option value="Taichung">Taichung</option>
+                <option value="Taoyuan">Taoyuan</option>
+            </select>
+        </td>
+        <td>
+            Birthday: <input type="date">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Email: <input type="email">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hobby
+        </td>
+
+        <td colspan="2">
+            <input type="checkbox"> Swimming
+            <input type="checkbox"> Volleyball
+            <input type="checkbox"> Movie
+            <input type="checkbox"> Game
+            <input type="checkbox"> Sleep
+        </td>
+            
+    </tr>
+    <tr>
+        <td>
+            Skill
+        </td>
+        
+        <td colspan="2">
+            <input type="checkbox"> Java
+            <input type="checkbox"> HTML
+            <input type="checkbox"> Python
+            <input type="checkbox"> Microsoft Office
+            <input type="checkbox"> Premiere
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Say something
+        </td>
+        <td colspan="2">
+            <textarea placeholder="Say something here."></textarea>
+        </td>
+    </tr>
+    <form action="/submit_handler" method="post">
+        
+            <tr>
+                <td colspan="3" align="left">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重設">
+                </td>
+            </tr>
+    
+    </form>
+</body>
+</table>
+
+</html>
